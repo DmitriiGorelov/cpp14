@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C14", "C14\C14.vcxproj", "{87BE14B4-F2EC-4F76-93B4-8803AA2DC96C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BrainTree_Interview", "BrainTree_Interview\BrainTree_Interview.vcxproj", "{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{87BE14B4-F2EC-4F76-93B4-8803AA2DC96C}.Release|x64.Build.0 = Release|x64
 		{87BE14B4-F2EC-4F76-93B4-8803AA2DC96C}.Release|x86.ActiveCfg = Release|Win32
 		{87BE14B4-F2EC-4F76-93B4-8803AA2DC96C}.Release|x86.Build.0 = Release|Win32
+		{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}.Debug|x64.ActiveCfg = Debug|x64
+		{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}.Debug|x64.Build.0 = Debug|x64
+		{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}.Debug|x86.ActiveCfg = Debug|Win32
+		{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}.Debug|x86.Build.0 = Debug|Win32
+		{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}.Release|x64.ActiveCfg = Release|x64
+		{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}.Release|x64.Build.0 = Release|x64
+		{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}.Release|x86.ActiveCfg = Release|Win32
+		{078F72E5-9B96-4D33-8EF1-8DF36E5B8B00}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
