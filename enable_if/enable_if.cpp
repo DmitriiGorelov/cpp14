@@ -93,4 +93,6 @@ int main()
 
 	A<int>{}; // OK: matches the primary template
 	A<double>{}; // OK: matches the partial specialization
+
+	std::aligned_union<0, int, double> id;
 }
