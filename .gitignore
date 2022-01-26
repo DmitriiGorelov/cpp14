@@ -1,2 +1,5 @@
 *.suo
 *.db
+/.vs/C14/v16/ipch/
+/C14/x64/Debug/
+*Debug/
