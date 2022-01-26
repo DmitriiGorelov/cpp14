@@ -75,7 +75,8 @@ void destroy(T* t){} // error: has the same signature with #5
 
 // the partial specialization of A is enabled via a template parameter
 template<class T, class Enable = void>
-class A {}; // primary template
+class A {
+}; // primary template
 
 template<class T>
 class A<T, typename std::enable_if<std::is_floating_point<T>::value>::type> {
@@ -91,8 +92,13 @@ int main()
 	construct(reinterpret_cast<std::string*>(&u), "Hello");
 	destroy(reinterpret_cast<std::string*>(&u));
 
-	A<int>{}; // OK: matches the primary template
-	A<double>{}; // OK: matches the partial specialization
+	auto a = A<int>{}; // OK: matches the primary template
+	auto a1 = A<double>{}; // OK: matches the partial specialization
 
-	std::aligned_union<0, int, double> id;
+	std::aligned_union_t<0, int, double> id;
+	construct(reinterpret_cast<int*>(&id));
+	destroy(reinterpret_cast<int*>(&id));
+
+	//construct(reinterpret_cast<std::string*>(&id), "Hello");
+	//destroy(reinterpret_cast<std::string*>(&id));
 }
