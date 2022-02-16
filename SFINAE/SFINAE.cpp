@@ -21,6 +21,9 @@ void add_one(T& val) { val += 1; }
 int main()
 {
     //1
+    std::string s("Hello");
+    //begin(s);
+    begin("Hello");
     int vals[10];
     begin(vals); // OK. The first function template substitution fails because
                  // vals.begin() is ill-formed. This is not an error! That function
