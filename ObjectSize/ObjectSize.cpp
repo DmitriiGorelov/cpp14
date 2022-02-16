@@ -97,6 +97,9 @@ class C22 : C21
 
 int main()
 {
+    // if win32 - size of classes with abstract method will be 4 bytes
+    // if x64 - size of classes with abstract methods will be 8 bytes
+
     std::cout << "sizeof(C0) = " << sizeof(C0) << std::endl;
     std::cout << "sizeof(C1) = " << sizeof(C1) << std::endl;
     std::cout << "sizeof(C2) = " << sizeof(C2) << std::endl;
