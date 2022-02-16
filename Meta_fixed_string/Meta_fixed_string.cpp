@@ -12,8 +12,8 @@ struct fixed_string {
     char data[N + 1] = {};
 };
 
-template<std::size_t N>
-struct fixed_string(const char (&str)[N]) -> fixed_string<N - 1>;
+//template<std::size_t N>
+//struct fixed_string(const char (&str)[N]) -> fixed_string<N - 1>;
 
 
 int main()
