@@ -108,7 +108,7 @@ int main()
     }
 
     //2 - const expr
-    {        
+    {
         strcut1 s1;
         call_me2(s1);
 
